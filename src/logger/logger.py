@@ -17,5 +17,9 @@ logging.basicConfig(
     filename=LOG_FILE_PATH,
     format="[ %(asctime)s ] %(levelname)s - %(message)s",
     level=logging.INFO,
-    filemode="a"
+    filemode="a",
+    force=True
 )
+
+print("Logger imported successfully")
+print("Log path:", LOG_FILE_PATH)
